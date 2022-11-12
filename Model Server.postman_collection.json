@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "366a41da-3938-40b8-a0f9-783b61982808",
+		"name": "Model Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Predict Output",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_data\": {\r\n        \"Glucose\": -0.403299,\r\n        \"BloodPressure\": 0.149543,\r\n        \"Insulin\": -0.041646,\r\n        \"BMI\": 0.520971,\r\n        \"Age\": -0.020483\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
